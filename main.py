@@ -29,7 +29,7 @@ def DateFormat(f):
     else:  return 'error in input!';
         
 
-
+# Return name of the first day of the month.
 def getFirstDayMonthWeekDayName():
     wd = jDate[2] % 7
     wd = wd - (gDate.isoweekday() + 2)
@@ -42,7 +42,7 @@ def getFirstDayMonthWeekDayName():
 
     return wd
 
-
+#Number of days of the month.
 def getMonthDays():
     if jDate[1] < 7:
         return 32
